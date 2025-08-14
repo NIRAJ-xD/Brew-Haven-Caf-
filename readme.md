@@ -1,100 +1,29 @@
-# Vite + Bootstrap Template
+# ☕ Brew Haven Café - Landing Page
 
-A modern, responsive web development template using Vite and Bootstrap 5.
+Welcome to **Brew Haven Café**, a cozy and inviting landing page designed to showcase the charm, menu, and atmosphere of our fictional coffee shop.  
+This project focuses on clean design, responsive layout, and smooth user experience.
 
-## 📁 Project Structure
+---
 
-```
-project-root/
-├── public/
-│   ├── favicon.svg
-│   └── images/
-│       └── hero-placeholder.svg
-├── src/
-│   ├── styles/
-│   │   └── style.css
-│   └── main.js
-├── index.html
-├── package.json
-├── vite.config.js
-└── README.md
-```
+## 📸 Preview
 
-## 🚀 Quick Start
+![Brew Haven Café Screenshot](screenshot.png)  
+*(Replace with your actual screenshot path)*
 
-1. **Clone or download this template**
+---
 
-2. **Install dependencies:**
-   ```bash
-   npm install
-   ```
+## 🌟 Features
 
-3. **Start development server:**
-   ```bash
-   npm run dev
-   ```
+- **Modern Hero Section** with welcoming tagline and call-to-action button.
+- **Signature & Special Menu Sections** to highlight popular café items.
+- **Responsive Design** for mobile, tablet, and desktop screens.
+- **Clean & Minimal Layout** for easy navigation.
+- **Interactive Elements** such as hover effects and clickable buttons.
+- **Engaging Footer** with café branding and essential details.
 
-4. **Build for production:**
-   ```bash
-   npm run build
-   ```
+---
 
-5. **Preview production build:**
-   ```bash
-   npm run preview
-   ```
+## 🛠️ Tech Stack
 
-## 📦 What's Included
-
-- **Vite** - Fast build tool and dev server
-- **Bootstrap 5** - Popular CSS framework
-- **Responsive Design** - Mobile-first approach
-- **Custom CSS** - Organized custom styles
-- **Font Awesome Ready** - Icon placeholders (add CDN link if needed)
-
-## 🔧 Features
-
-- Hot Module Replacement (HMR)
-- Optimized production builds
-- Modern JavaScript (ES6+)
-- CSS custom properties (variables)
-- Smooth scrolling navigation
-- Hover effects and animations
-- Mobile responsive layout
-
-## 🎨 Customization
-
-### Colors
-Modify CSS custom properties in `src/styles/style.css`:
-```css
-:root {
-  --primary-color: #007bff;
-  --secondary-color: #6c757d;
-  /* Add your custom colors */
-}
-```
-
-### Adding Pages
-1. Create new HTML files in the root directory
-2. Link them in your navigation
-3. Add page-specific styles in `style.css`
-
-### Adding Components
-- Add HTML components to `index.html`
-- Style them in `src/styles/style.css`
-- Add JavaScript functionality in `src/main.js`
-
-## 📱 Browser Support
-
-- Chrome (latest)
-- Firefox (latest)
-- Safari (latest)
-- Edge (latest)
-
-## 🤝 Contributing
-
-Feel free to submit issues and enhancement requests!
-
-## 📄 License
-
-This project is open source and available under the MIT License.
+- **HTML5** – Semantic structure for accessibility and SEO.
+- **CSS3** – St
