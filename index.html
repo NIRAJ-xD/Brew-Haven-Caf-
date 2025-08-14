@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Brew Haven Café - Handcrafted coffee and fresh bakes">
+    <title>Brew Haven Café</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/favicon.svg" type="image/x-icon">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <script type="module" src="/src/main.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light custom-navbar">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="/images/logo.svg" alt="Brew Haven Logo" class="logo-image">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#menu">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                    </ul>
+                    <div class="navbar-nav">
+                        <i class="fa-solid fa-magnifying-glass nav-icon me-3"></i>
+                        <i class="fa-solid fa-cart-shopping nav-icon"></i>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+        <div class="container">
+            <div class="row flex-row align-items-center min-vh-100">
+                <div class="col-lg-6">
+                    <div class="hero-content">
+                        <h1 class="hero-title">Sip, Relax and Repeat.</h1>
+                        <p class="hero-subtitle">Discover handcrafted coffee and fresh bakes in the heart of the city.</p>
+                        <button class="btn btn-custom btn-lg">Explore Menu</button>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-image text-center">
+                        <img src="/images/Hero-image.png" alt="Coffee Cup" class="img-fluid coffee-cup-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Signature Menu -->
+    <section class="menu-section signature-menu py-5" id="menu">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Our Signature Menu</h2>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card menu-card h-100">
+                        <div class="menu-item-image" style="background: linear-gradient(45deg, #D2B48C, #F5DEB3);">
+                            <svg width="100%" height="200" viewBox="0 0 200 200">
+                                <ellipse cx="100" cy="170" rx="60" ry="10" fill="#8B4513" opacity="0.3"/>
+                                <ellipse cx="100" cy="100" rx="50" ry="50" fill="#F5DEB3"/>
+                                <ellipse cx="100" cy="90" rx="40" ry="8" fill="#8B4513"/>
+                                <circle cx="100" cy="100" r="25" fill="#D2B48C"/>
+                                <path d="M85 85 Q100 75 115 85" fill="none" stroke="#8B4513" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h5 class="card-title mb-0">Vanilla Latte</h5>
+                                <span class="price">₹ 21</span>
+                            </div>
+                            <p class="card-text">Creamy vanilla-infused espresso with steamed milk</p>
+                            <button class="btn btn-sm btn-add">+</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card menu-card h-100">
+                        <div class="menu-item-image" style="background: linear-gradient(45deg, #8B4513, #A0522D);">
+                            <svg width="100%" height="200" viewBox="0 0 200 200">
+                                <ellipse cx="100" cy="170" rx="50" ry="8" fill="#8B4513" opacity="0.3"/>
+                                <ellipse cx="100" cy="100" rx="40" ry="40" fill="#F5F5DC"/>
+                                <ellipse cx="100" cy="90" rx="30" ry="6" fill="#8B4513"/>
+                                <circle cx="100" cy="100" r="20" fill="#654321"/>
+                            </svg>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h5 class="card-title mb-0">Espresso</h5>
+                                <span class="price">₹ 12</span>
+                            </div>
+                            <p class="card-text">Rich and bold single shot espresso</p>
+                            <button class="btn btn-sm btn-add">+</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card menu-card h-100">
+                        <div class="menu-item-image" style="background: linear-gradient(45deg, #DEB887, #F5DEB3);">
+                            <svg width="100%" height="200" viewBox="0 0 200 200">
+                                <ellipse cx="100" cy="170" rx="60" ry="10" fill="#8B4513" opacity="0.3"/>
+                                <ellipse cx="100" cy="100" rx="50" ry="50" fill="#F5DEB3"/>
+                                <ellipse cx="100" cy="90" rx="40" ry="8" fill="#DEB887"/>
+                                <circle cx="100" cy="100" r="25" fill="#D2B48C"/>
+                                <circle cx="95" cy="95" r="3" fill="#8B4513"/>
+                                <circle cx="105" cy="105" r="3" fill="#8B4513"/>
+                            </svg>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h5 class="card-title mb-0">Hazelnut Latte</h5>
+                                <span class="price">₹ 23</span>
+                            </div>
+                            <p class="card-text">Smooth latte with rich hazelnut flavor</p>
+                            <button class="btn btn-sm btn-add">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Menu -->
+    <section class="menu-section special-menu py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Special Menu For You</h2>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card menu-card h-100">
+                        <div class="menu-item-image" style="background: linear-gradient(45deg, #DEB887, #F4A460);">
+                            <svg width="100%" height="200" viewBox="0 0 200 200">
+                                <rect x="60" y="80" width="80" height="60" rx="10" fill="#DEB887"/>
+                                <rect x="70" y="90" width="60" height="40" fill="#F4A460"/>
+                                <path d="M70 110 L130 90 L130 110 L70 130 Z" fill="#CD853F"/>
+                            </svg>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h5 class="card-title mb-0">Sandwich</h5>
+                                <span class="price">₹ 12</span>
+                            </div>
+                            <p class="card-text">Fresh grilled sandwich with premium fillings</p>
+                            <button class="btn btn-sm btn-add">+</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card menu-card h-100">
+                        <div class="menu-item-image" style="background: linear-gradient(45deg, #8B4513, #A0522D);">
+                            <svg width="100%" height="200" viewBox="0 0 200 200">
+                                <ellipse cx="100" cy="170" rx="50" ry="8" fill="#8B4513" opacity="0.3"/>
+                                <ellipse cx="100" cy="100" rx="40" ry="40" fill="#F5F5DC"/>
+                                <ellipse cx="100" cy="90" rx="30" ry="6" fill="#8B4513"/>
+                                <circle cx="100" cy="100" r="20" fill="#A0522D"/>
+                                <ellipse cx="100" cy="95" rx="15" ry="3" fill="#F5F5DC"/>
+                            </svg>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h5 class="card-title mb-0">Hot Milk</h5>
+                                <span class="price">₹ 12</span>
+                            </div>
+                            <p class="card-text">Warm and creamy milk, perfect comfort drink</p>
+                            <button class="btn btn-sm btn-add">+</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card menu-card h-100">
+                        <div class="menu-item-image" style="background: linear-gradient(45deg, #F5DEB3, #FFFACD);">
+                            <svg width="100%" height="200" viewBox="0 0 200 200">
+                                <ellipse cx="100" cy="170" rx="60" ry="10" fill="#8B4513" opacity="0.3"/>
+                                <ellipse cx="100" cy="100" rx="50" ry="50" fill="#F5DEB3"/>
+                                <ellipse cx="100" cy="80" rx="40" ry="10" fill="#FFFACD"/>
+                                <circle cx="95" cy="90" r="8" fill="#F0F8FF"/>
+                                <circle cx="105" cy="110" r="8" fill="#F0F8FF"/>
+                            </svg>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h5 class="card-title mb-0">Coffee Ice Cream</h5>
+                                <span class="price">₹ 12</span>
+                            </div>
+                            <p class="card-text">Creamy coffee-flavored ice cream treat</p>
+                            <button class="btn btn-sm btn-add">+</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card menu-card h-100">
+                        <div class="menu-item-image" style="background: linear-gradient(45deg, #DEB887, #F5DEB3);">
+                            <svg width="100%" height="200" viewBox="0 0 200 200">
+                                <ellipse cx="100" cy="170" rx="50" ry="8" fill="#8B4513" opacity="0.3"/>
+                                <ellipse cx="100" cy="100" rx="40" ry="40" fill="#F5DEB3"/>
+                                <ellipse cx="100" cy="90" rx="30" ry="6" fill="#DEB887"/>
+                                <circle cx="100" cy="100" r="20" fill="#D2B48C"/>
+                                <path d="M90 90 Q100 85 110 90" fill="none" stroke="#8B4513" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h5 class="card-title mb-0">Cappuccino</h5>
+                                <span class="price">₹ 12</span>
+                            </div>
+                            <p class="card-text">Classic Italian coffee with perfect foam</p>
+                            <button class="btn btn-sm btn-add">+</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card menu-card h-100">
+                        <div class="menu-item-image" style="background: linear-gradient(45deg, #FF6347, #FF7F50);">
+                            <svg width="100%" height="200" viewBox="0 0 200 200">
+                                <ellipse cx="100" cy="170" rx="50" ry="8" fill="#8B4513" opacity="0.3"/>
+                                <ellipse cx="100" cy="100" rx="40" ry="40" fill="#F5F5DC"/>
+                                <ellipse cx="100" cy="90" rx="30" ry="6" fill="#FF6347"/>
+                                <circle cx="100" cy="100" r="20" fill="#FF7F50"/>
+                                <path d="M85 85 Q100 75 115 85" fill="none" stroke="#8B4513" stroke-width="3"/>
+                            </svg>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h5 class="card-title mb-0">Macchiato</h5>
+                                <span class="price">₹ 12</span>
+                            </div>
+                            <p class="card-text">Espresso marked with steamed milk foam</p>
+                            <button class="btn btn-sm btn-add">+</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card menu-card h-100">
+                        <div class="menu-item-image" style="background: linear-gradient(45deg, #DEB887, #8B4513);">
+                            <svg width="100%" height="200" viewBox="0 0 200 200">
+                                <rect x="60" y="80" width="80" height="80" rx="10" fill="#DEB887"/>
+                                <rect x="70" y="90" width="60" height="15" fill="#8B4513"/>
+                                <rect x="70" y="110" width="60" height="15" fill="#654321"/>
+                                <rect x="70" y="130" width="60" height="15" fill="#8B4513"/>
+                            </svg>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h5 class="card-title mb-0">Waffle Ice Cream</h5>
+                                <span class="price">₹ 12</span>
+                            </div>
+                            <p class="card-text">Crispy waffle served with vanilla ice cream</p>
+                            <button class="btn btn-sm btn-add">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section py-5" id="about">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="about-image">
+                        <svg width="100%" height="300" viewBox="0 0 400 300" class="img-fluid">
+                            <rect width="400" height="300" rx="15" fill="#8B4513"/>
+                            <ellipse cx="200" cy="200" rx="80" ry="15" fill="#654321" opacity="0.5"/>
+                            <ellipse cx="200" cy="150" rx="60" ry="60" fill="#F5F5DC"/>
+                            <ellipse cx="200" cy="130" rx="50" ry="10" fill="#8B4513"/>
+                            <circle cx="200" cy="150" r="30" fill="#D2B48C"/>
+                            <path d="M170 130 Q200 110 230 130" fill="none" stroke="#654321" stroke-width="3"/>
+                            <path d="M180 120 Q200 100 220 120" fill="none" stroke="#654321" stroke-width="2"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-content">
+                        <h2 class="mb-4">About us</h2>
+                        <p class="mb-3"><strong>We provide quality coffee, and ready to deliver.</strong></p>
+                        <p class="mb-4">We are a company that makes and distributes delicious drinks. Our main product is made with a secret recipe and available in stores worldwide.</p>
+                        <button class="btn btn-light btn-lg">Learn more</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials-section py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="mb-3">What they say about us</h2>
+                <p class="text-muted">We always maintain the quality of coffee and we are ready to deliver everywhere any time. Our coffee has always been praised for the unique taste and fine quality.</p>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card testimonial-card h-100">
+                        <div class="card-body text-center">
+                            <div class="testimonial-avatar mx-auto mb-3" style="background: linear-gradient(45deg, #FF6B9D, #C44569);"></div>
+                            <h5 class="card-title">Naura</h5>
+                            <p class="card-text">"I am very happy with the service, the coffee is very delicious and the process is also very fast."</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card testimonial-card h-100">
+                        <div class="card-body text-center">
+                            <div class="testimonial-avatar mx-auto mb-3" style="background: linear-gradient(45deg, #4834DF, #686DE0);"></div>
+                            <h5 class="card-title">John</h5>
+                            <p class="card-text">"This coffee shop is very comfortable to hang out and the coffee provided is also very delicious, I recommend it."</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card testimonial-card h-100">
+                        <div class="card-body text-center">
+                            <div class="testimonial-avatar mx-auto mb-3" style="background: linear-gradient(45deg, #F8B500, #FFC048);"></div>
+                            <h5 class="card-title">Aruna</h5>
+                            <p class="card-text">"The coffee menu here is very varied and all are made with high quality coffee beans. I highly recommend it."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-4">
+        <div class="container">
+            <div class="row align-items-center mb-4">
+                <div class="col-lg-4 mb-3 mb-lg-0">
+                    <div class="footer-logo d-flex align-items-center">
+                        <div class="logo-icon me-3">B</div>
+                        <span>Sip, Relax and Repeat.</span>
+                    </div>
+                </div>
+                
+                <div class="col-lg-8">
+                    <div class="footer-cta d-flex align-items-center justify-content-lg-end">
+                        <div class="newsletter-text me-3">
+                            <div class="small">Join our Newsletter and receive exclusive</div>
+                            <div class="small">updates and offers</div>
+                        </div>
+                        <div class="newsletter-form d-flex">
+                            <input type="email" class="form-control me-2" placeholder="Your email here">
+                            <button class="btn btn-primary">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <hr>
+            
+            <div class="row align-items-center">
+                <div class="col-lg-4 mb-2 mb-lg-0">
+                    <small class="text-muted">©2023 Brew Haven. All Rights Reserved.</small>
+                </div>
+                <div class="col-lg-4 text-center mb-2 mb-lg-0">
+                    <div class="footer-links">
+                        <a href="#" class="me-3">Privacy</a>
+                        <a href="#" class="me-3">Terms</a>
+                        <a href="#">Contact</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-lg-end">
+                    <div class="social-icons">
+                        <a href="#" class="social-icon me-2">f</a>
+                        <a href="#" class="social-icon me-2">t</a>
+                        <a href="#" class="social-icon">i</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
