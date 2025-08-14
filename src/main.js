@@ -1,3 +1,6 @@
+// Reset CSS
+import './styles/reset/reset.css'
+
 // Import Bootstrap CSS
 import 'bootstrap/dist/css/bootstrap.min.css'
 
