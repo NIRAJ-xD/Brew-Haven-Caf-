@@ -10,9 +10,6 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js'
 // Import custom CSS
 import './styles/style.css'
 
-// Your custom JavaScript
-console.log('Brew Haven Café loaded!')
-
 // Smooth scrolling for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
@@ -106,3 +103,5 @@ document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
         }
     });
 });
+
+document.getElementById("year").textContent = new Date().getFullYear();
